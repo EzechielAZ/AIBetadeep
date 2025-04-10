@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - βetadeep</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <span class="ai-icon"><i class="fas fa-robot"></i></span>
+                <span>βetadeep</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="formation.html">Formation</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Contactez-nous</h1>
+            <p>Une question ? Une inscription ? Nous sommes là pour vous aider !</p>
+        </div>
+    </section>
+
+    <section class="contact-options">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form-container">
+                    <h2>Envoyez-nous un message</h2>
+                    <p>Complétez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.</p>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nom complet</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Adresse e-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Sujet</label>
+                            <select id="subject" name="subject">
+                                <option value="info">Informations sur la formation</option>
+                                <option value="inscription">Inscription à la formation</option>
+                                <option value="custom">Demande de formation sur mesure</option>
+                                <option value="other">Autre demande</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Votre message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn primary-btn">Envoyer le message</button>
+                    </form>
+                    
+                    <div id="formSuccess" class="form-success hidden">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>Message envoyé avec succès !</h3>
+                        <p>Nous vous répondrons dans les plus brefs délais. Merci de votre intérêt pour notre formation.</p>
+                    </div>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-card email-contact">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>E-mail</h3>
+                        <p>Nous répondons généralement sous 24h</p>
+                        <a href="mailto:sharold.tete@gmail.com">sharold.tete@gmail.com</a>
+                    </div>
+                    
+                    <div id="whatsapp" class="contact-card whatsapp-contact">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h3>WhatsApp</h3>
+                        <p>Pour une réponse rapide et directe</p>
+                        <a href="https://wa.me/2290144974733" class="whatsapp-button">
+                            <i class="fab fa-whatsapp"></i> Discuter sur WhatsApp
+                        </a>
+                    </div>
+                    
+                    <div class="contact-card phone-contact">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>Téléphone</h3>
+                        <p>Du lundi au vendredi, 9h-18h</p>
+                        <a href="tel:+2290144974733">+229 01 44 97 47 33</a>
+                    </div>
+                    
+                    <div class="newsletter-signup">
+                        <h3>Restez informé</h3>
+                        <p>Recevez nos derniers conseils et actualités sur l'IA et le développement web</p>
+                        <form id="newsletterForm" class="newsletter-form">
+                            <input type="email" placeholder="Votre adresse e-mail" required>
+                            <button type="submit" class="btn secondary-btn">S'abonner</button>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <h2>Questions fréquentes</h2>
+            <div class="faq-list">
+    
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Quel niveau est requis pour suivre la formation ?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>La formation est ouverte à tous. Même si vous êtes débutant complet, pas d’inquiétude ! Tout est expliqué de manière simple, avec des exemples concrets et des vidéos pas à pas.</p>
+                    </div>
+                </div>
+    
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Et si je ne comprends pas tout du premier coup ?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>C’est tout à fait normal ! Vous pouvez revoir les vidéos autant de fois que vous voulez. Vous aurez aussi accès à notre groupe d’entraide où vous pouvez poser vos questions et recevoir du soutien.</p>
+                    </div>
+                </div>
+    
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Faut-il un ordinateur puissant ?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Non, un ordinateur standard suffit pour suivre la formation. Vous avez juste besoin d’une connexion Internet pour accéder aux vidéos et aux ressources.</p>
+                    </div>
+                </div>
+    
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>La formation est-elle disponible en ligne ou en présentiel ?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>La formation est disponible 100% en ligne. Vous pouvez apprendre depuis chez vous, à votre rythme. Nous proposons aussi parfois des sessions en présentiel, selon la demande.</p>
+                    </div>
+                </div>
+    
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Combien de temps faut-il pour terminer la formation ?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>La formation contient environ 24 heures de contenu. Mais vous pouvez la suivre à votre propre rythme, que ce soit en quelques jours ou quelques semaines.</p>
+                    </div>
+                </div>
+    
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Ai-je besoin d’avoir déjà fait du code ?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Pas du tout. La formation est progressive. On commence par les bases avant d’aller vers des notions plus avancées. Aucun prérequis en programmation n’est nécessaire.</p>
+                    </div>
+                </div>
+    
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Y a-t-il un accompagnement après la formation ?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui ! Vous rejoignez notre communauté privée où vous pouvez poser des questions, partager vos projets, et bénéficier de conseils. Des sessions en direct sont aussi proposées régulièrement.</p>
+                    </div>
+                </div>
+    
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Est-ce que la formation est mise à jour ?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, nous mettons régulièrement à jour la formation pour intégrer les dernières nouveautés et outils. Vous y avez accès à vie, sans frais supplémentaires.</p>
+                    </div>
+                </div>
+    
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Est-ce que je vais obtenir un certificat à la fin ?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, un certificat de réussite vous est délivré à la fin de la formation. Il peut être ajouté à votre CV ou à votre profil LinkedIn.</p>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="cta-banner">
+        <div class="container">
+            <h2>Prêt à démarrer votre parcours avec l'IA ?</h2>
+            <p>Cliquez ici pour démarrer votre parcours avec l'IA et améliorer vos projets web. Nous vous contacterons rapidement !</p>
+            <a href="#" class="btn primary-btn pulse-btn">S'inscrire maintenant</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="ai-icon"><i class="fas fa-robot"></i></span>
+                    <span>βetadeep</span>
+                    <p>La formation qui transforme les développeurs ordinaires en experts de l'IA.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="formation.html">Formation</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> 
+                        <a href="mailto:sharold.tete@gmail.com">sharold.tete@gmail.com</a>
+                    </p>
+                    <a href="tel:+2290144974733">
+                        <p><i class="fas fa-phone"></i> +229 01 44 97 47 33</p>
+                    </a>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 βetadeep. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
