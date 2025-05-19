@@ -3,216 +3,335 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - βetadeep</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#d35400">
+    <title>Contact - BetaDEEP</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="logo">
-                <span class="ai-icon"><i class="fas fa-robot"></i></span>
-                <span>βetadeep</span>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="formation.html">Formation</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
-                </ul>
-                <div class="menu-toggle">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </nav>
+        <div class="logo">
+            <a href="index.html">
+                <img src="./BetaDeep_logo.png" style="margin-left: 20px;" width="50" height="20" /> 
+                <svg width="200" height="60" viewBox="0 0 200 60">
+                    <style>
+                        @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap');
+                        .techup { font-family: 'Rajdhani', sans-serif; font-weight: 700; font-size: 26px; fill: #27517a; }
+                        .africa { font-family: 'Rajdhani', sans-serif; font-weight: 700; font-size: 26px; fill: #ff6600; }
+                    </style>
+                    <text x="5" y="40" class="techup">Beta</text>
+                    <text x="55" y="40" class="africa">DEEP</text> <!-- Réduction de l'espace -->
+                </svg>
+            </a> 
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" >Accueil</a></li>
+                <li><a href="solutions.html">Solutions</a></li>
+                <li><a href="formations.html">Formations</a></li>
+                <li><a href="about.html">À propos</a></li>
+                
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cta-button">
+            <a href="contact.html" class="btn-primary">Demander un devis</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </header>
 
-    <section class="page-header">
+    <section class="page-banner">
         <div class="container">
             <h1>Contactez-nous</h1>
-            <p>Une question ? Une inscription ? Nous sommes là pour vous aider !</p>
+            <p>Notre équipe est à votre disposition pour répondre à toutes vos questions et vous accompagner dans vos projets.</p>
         </div>
     </section>
 
-    <section class="contact-options">
+    <section class="contact-info">
         <div class="container">
-            <div class="contact-grid">
-                <div class="contact-form-container">
-                    <h2>Envoyez-nous un message</h2>
-                    <p>Complétez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.</p>
-                    
-                    <form id="contactForm" class="contact-form">
-                        <div class="form-group">
-                            <label for="name">Nom complet</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Adresse e-mail</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="subject">Sujet</label>
-                            <select id="subject" name="subject">
-                                <option value="info">Informations sur la formation</option>
-                                <option value="inscription">Inscription à la formation</option>
-                                <option value="custom">Demande de formation sur mesure</option>
-                                <option value="other">Autre demande</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Votre message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn primary-btn">Envoyer le message</button>
-                    </form>
-                    
-                    <div id="formSuccess" class="form-success hidden">
-                        <i class="fas fa-check-circle"></i>
-                        <h3>Message envoyé avec succès !</h3>
-                        <p>Nous vous répondrons dans les plus brefs délais. Merci de votre intérêt pour notre formation.</p>
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
                     </div>
+                    <h3>Adresse</h3>
+                    <p>123 Abomey-Calavi<br>Aitchedji, Bénin</p>
                 </div>
-                
-                <div class="contact-info">
-                    <div class="contact-card email-contact">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <h3>E-mail</h3>
-                        <p>Nous répondons généralement sous 24h</p>
-                        <a href="mailto:sharold.tete@gmail.com">sharold.tete@gmail.com</a>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
                     </div>
-                    
-                    <div id="whatsapp" class="contact-card whatsapp-contact">
-                        <div class="contact-icon">
-                            <i class="fab fa-whatsapp"></i>
-                        </div>
-                        <h3>WhatsApp</h3>
-                        <p>Pour une réponse rapide et directe</p>
-                        <a href="https://wa.me/2290144974733" class="whatsapp-button">
-                            <i class="fab fa-whatsapp"></i> Discuter sur WhatsApp
-                        </a>
-                    </div>
-                    
-                    <div class="contact-card phone-contact">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone-alt"></i>
-                        </div>
-                        <h3>Téléphone</h3>
-                        <p>Du lundi au vendredi, 9h-18h</p>
-                        <a href="tel:+2290144974733">+229 01 44 97 47 33</a>
-                    </div>
-                    
-                    <div class="newsletter-signup">
-                        <h3>Restez informé</h3>
-                        <p>Recevez nos derniers conseils et actualités sur l'IA et le développement web</p>
-                        <form id="newsletterForm" class="newsletter-form">
-                            <input type="email" placeholder="Votre adresse e-mail" required>
-                            <button type="submit" class="btn secondary-btn">S'abonner</button>
-                        </form>
-                    </div>
+                    <h3>Téléphone</h3>
+                    <p>+229 44974733<br>+229 43219586</p>
                 </div>
-                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>contact.betadeep@gmail.com<br></p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Horaires</h3>
+                    <p>Lun - Ven: 9h - 18h<br>Sam: 9h - 13h</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="faq">
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-columns">
+                <div class="contact-form-column">
+                    <h2>Envoyez-nous un message</h2>
+                    <form id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nom complet</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Téléphone</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Sujet</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Sélectionner</option>
+                                    <option value="devis">Demande de devis</option>
+                                    <option value="information">Demande d'information</option>
+                                    <option value="formation">Formation</option>
+                                    <option value="partenariat">Partenariat</option>
+                                    <option value="autre">Autre</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <div class="form-group form-checkbox">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy">J'accepte que mes données soient traitées conformément à la <a href="privacy.html">politique de confidentialité</a>.</label>
+                        </div>
+                        <button type="submit" class="btn-primary">Envoyer le message</button>
+                    </form>
+                </div>
+                
+                <div class="map-column">
+                    <h2>Nous trouver</h2>
+                    <div class="map-container" data-aos="fade-up">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15862.776430544336!2d2.3911292771739953!3d6.364426716963251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1023545b6cb15af5%3A0x56b1faef4a0c7efa!2sGb%C3%A9gamey%2C%20Cotonou%2C%20Benin!5e0!3m2!1sen!2sus!4v1652970892996!5m2!1sen!2sus" 
+                            width="600" 
+                            height="450" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="booking-section">
+        <div class="container">
+            <h2>Réservez une consultation</h2>
+            <p>Planifiez un rendez-vous virtuel ou en personne avec l'un de nos experts pour discuter de votre projet.</p>
+            <div class="booking-container">
+                <div class="booking-options">
+                    <div class="booking-option">
+                        <div class="option-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3>Consultation virtuelle</h3>
+                        <p>Échangez avec nos experts depuis le confort de votre bureau via Zoom, Teams ou Google Meet.</p>
+                        <a href="#booking-form" class="btn-secondary">Réserver en ligne</a>
+                    </div>
+                    <div class="booking-option">
+                        <div class="option-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Rendez-vous en personne</h3>
+                        <p>Venez nous rencontrer dans nos bureaux pour une discussion approfondie sur votre projet.</p>
+                        <a href="#booking-form" class="btn-secondary">Réserver en ligne</a>
+                    </div>
+                </div>
+                <div id="booking-form" class="booking-form">
+                    <h3>Formulaire de réservation</h3>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="booking-name">Nom complet</label>
+                                <input type="text" id="booking-name" name="booking-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="booking-email">Email</label>
+                                <input type="email" id="booking-email" name="booking-email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="booking-phone">Téléphone</label>
+                                <input type="tel" id="booking-phone" name="booking-phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="booking-type">Type de rendez-vous</label>
+                                <select id="booking-type" name="booking-type" required>
+                                    <option value="">Sélectionner</option>
+                                    <option value="virtual">Consultation virtuelle</option>
+                                    <option value="in-person">Rendez-vous en personne</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="booking-date">Date souhaitée</label>
+                                <input type="date" id="booking-date" name="booking-date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="booking-time">Heure souhaitée</label>
+                                <select id="booking-time" name="booking-time" required>
+                                    <option value="">Sélectionner</option>
+                                    <option value="09:00">09:00</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="16:00">16:00</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="booking-topic">Sujet de la discussion</label>
+                            <textarea id="booking-topic" name="booking-topic" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Confirmer la réservation</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="formation" class="contact-formation">
+        <div class="container">
+            <h2>Inscription aux formations</h2>
+            <p>Vous souhaitez vous inscrire à l'une de nos formations ou obtenir plus d'informations ?</p>
+            <div class="formation-contact-options">
+                <div class="formation-contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Formations individuelles</h3>
+                    <p>Contactez notre équipe pédagogique pour discuter de votre parcours de formation personnalisé.</p>
+                    <a href="tel:+229 0144974733" class="contact-link"><i class="fas fa-phone"></i> +229 0144974733</a>
+                    <a href="mailto:contact.betadeep@gmail.com" class="contact-link"><i class="fas fa-envelope"></i> contact.betadeep@gmail.com</a>
+                </div>
+                <div class="formation-contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Formations d'entreprise</h3>
+                    <p>Des programmes sur mesure pour développer les compétences de vos équipes.</p>
+                    <a href="tel:+229 0144974733" class="contact-link"><i class="fas fa-phone"></i> +229 0144974733</a>
+                    <a href="mailto:contact.betadeep@gmail.com" class="contact-link"><i class="fas fa-envelope"></i> contact.betadeep@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
         <div class="container">
             <h2>Questions fréquentes</h2>
-            <div class="faq-list">
+            <div class="faq-container">
     
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>Quel niveau est requis pour suivre la formation ?</h3>
-                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        <h3>Comment obtenir un devis pour un projet de développement logiciel ?</h3>
+                        <div class="faq-toggle"><i class="fas fa-plus"></i></div>
                     </div>
                     <div class="faq-answer">
-                        <p>La formation est ouverte à tous. Même si vous êtes débutant complet, pas d’inquiétude ! Tout est expliqué de manière simple, avec des exemples concrets et des vidéos pas à pas.</p>
+                        <p>Vous pouvez remplir notre formulaire de contact en détaillant votre projet ou nous appeler directement. Après une consultation gratuite, nous vous fournirons un devis personnalisé sous 2 à 3 jours ouvrables.</p>
                     </div>
                 </div>
     
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>Et si je ne comprends pas tout du premier coup ?</h3>
-                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        <h3>Quels sont les délais moyens pour un projet de développement web ?</h3>
+                        <div class="faq-toggle"><i class="fas fa-plus"></i></div>
                     </div>
                     <div class="faq-answer">
-                        <p>C’est tout à fait normal ! Vous pouvez revoir les vidéos autant de fois que vous voulez. Vous aurez aussi accès à notre groupe d’entraide où vous pouvez poser vos questions et recevoir du soutien.</p>
+                        <p>Les délais varient selon la complexité du projet. Un site vitrine peut être prêt en 2 à 4 semaines, tandis qu’une application web sur mesure peut nécessiter entre 2 et 6 mois. Nous définissons ensemble un planning détaillé dès le début du projet.</p>
                     </div>
                 </div>
     
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>Faut-il un ordinateur puissant ?</h3>
-                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        <h3>Proposez-vous des formations à distance ?</h3>
+                        <div class="faq-toggle"><i class="fas fa-plus"></i></div>
                     </div>
                     <div class="faq-answer">
-                        <p>Non, un ordinateur standard suffit pour suivre la formation. Vous avez juste besoin d’une connexion Internet pour accéder aux vidéos et aux ressources.</p>
+                        <p>Oui, nos formations sont accessibles en ligne, en format hybride ou en présentiel. Les sessions à distance incluent un suivi personnalisé, des supports pédagogiques interactifs et des séances de questions-réponses avec nos formateurs.</p>
                     </div>
                 </div>
     
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>La formation est-elle disponible en ligne ou en présentiel ?</h3>
-                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        <h3>Offrez-vous un service de maintenance après le développement d'une application ?</h3>
+                        <div class="faq-toggle"><i class="fas fa-plus"></i></div>
                     </div>
                     <div class="faq-answer">
-                        <p>La formation est disponible 100% en ligne. Vous pouvez apprendre depuis chez vous, à votre rythme. Nous proposons aussi parfois des sessions en présentiel, selon la demande.</p>
+                        <p>Oui, nous proposons plusieurs formules de maintenance incluant les mises à jour de sécurité, la correction de bugs et l’ajout de nouvelles fonctionnalités. Notre assistance technique est disponible pour assurer la pérennité de votre application.</p>
                     </div>
                 </div>
     
+                <!-- Nouvelle question 1 -->
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>Combien de temps faut-il pour terminer la formation ?</h3>
-                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        <h3>Quels sont les modes de paiement acceptés ?</h3>
+                        <div class="faq-toggle"><i class="fas fa-plus"></i></div>
                     </div>
                     <div class="faq-answer">
-                        <p>La formation contient environ 24 heures de contenu. Mais vous pouvez la suivre à votre propre rythme, que ce soit en quelques jours ou quelques semaines.</p>
+                        <p>Nous acceptons les paiements par virement bancaire, carte bancaire et mobile money. Des facilités de paiement peuvent être mises en place pour certains projets.</p>
                     </div>
                 </div>
     
+                <!-- Nouvelle question 2 -->
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>Ai-je besoin d’avoir déjà fait du code ?</h3>
-                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        <h3>Pouvons-nous personnaliser les fonctionnalités selon nos besoins ?</h3>
+                        <div class="faq-toggle"><i class="fas fa-plus"></i></div>
                     </div>
                     <div class="faq-answer">
-                        <p>Pas du tout. La formation est progressive. On commence par les bases avant d’aller vers des notions plus avancées. Aucun prérequis en programmation n’est nécessaire.</p>
+                        <p>Oui, chaque solution est développée sur mesure pour répondre à vos besoins spécifiques. Nous travaillons en collaboration avec vous pour garantir que toutes les fonctionnalités correspondent à vos attentes.</p>
                     </div>
                 </div>
     
+                <!-- Nouvelle question 3 -->
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>Y a-t-il un accompagnement après la formation ?</h3>
-                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        <h3>Proposez-vous une assistance technique après la livraison ?</h3>
+                        <div class="faq-toggle"><i class="fas fa-plus"></i></div>
                     </div>
                     <div class="faq-answer">
-                        <p>Oui ! Vous rejoignez notre communauté privée où vous pouvez poser des questions, partager vos projets, et bénéficier de conseils. Des sessions en direct sont aussi proposées régulièrement.</p>
-                    </div>
-                </div>
-    
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Est-ce que la formation est mise à jour ?</h3>
-                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Oui, nous mettons régulièrement à jour la formation pour intégrer les dernières nouveautés et outils. Vous y avez accès à vie, sans frais supplémentaires.</p>
-                    </div>
-                </div>
-    
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Est-ce que je vais obtenir un certificat à la fin ?</h3>
-                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Oui, un certificat de réussite vous est délivré à la fin de la formation. Il peut être ajouté à votre CV ou à votre profil LinkedIn.</p>
+                        <p>Oui, nous offrons une assistance technique après la mise en ligne de votre projet. Selon votre contrat, vous bénéficiez d'un support pour les mises à jour et la résolution de problèmes éventuels.</p>
                     </div>
                 </div>
     
@@ -220,54 +339,51 @@
         </div>
     </section>
     
-
-    <section class="cta-banner">
-        <div class="container">
-            <h2>Prêt à démarrer votre parcours avec l'IA ?</h2>
-            <p>Cliquez ici pour démarrer votre parcours avec l'IA et améliorer vos projets web. Nous vous contacterons rapidement !</p>
-            <a href="#" class="btn primary-btn pulse-btn">S'inscrire maintenant</a>
-        </div>
-    </section>
-
     <footer>
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <span class="ai-icon"><i class="fas fa-robot"></i></span>
-                    <span>βetadeep</span>
-                    <p>La formation qui transforme les développeurs ordinaires en experts de l'IA.</p>
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>BetaDEEP</h3>
+                    <p>Votre partenaire technologique en Afrique pour développer des solutions innovantes et former les talents de demain.</p>
                 </div>
-                <div class="footer-links">
-                    <h4>Navigation</h4>
+                <div class="footer-column">
+                    <h3>Liens rapides</h3>
                     <ul>
                         <li><a href="index.html">Accueil</a></li>
-                        <li><a href="formation.html">Formation</a></li>
+                        <li><a href="solutions.html">Solutions</a></li>
+                        <li><a href="formations.html">Formations</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="blog.html">Blog</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-contact">
-                    <h4>Contact</h4>
-                    <p><i class="fas fa-envelope"></i> 
-                        <a href="mailto:sharold.tete@gmail.com">sharold.tete@gmail.com</a>
-                    </p>
-                    <a href="tel:+2290144974733">
-                        <p><i class="fas fa-phone"></i> +229 01 44 97 47 33</p>
-                    </a>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                <div class="footer-column">
+                    <h3>Mentions légales</h3>
+                    <ul>
+                        <li><a href="legal.html">Mentions légales</a></li>
+                        <li><a href="cgv.html">CGV</a></li>
+                        <li><a href="cgu.html">CGU</a></li>
+                        <li><a href="privacy.html">Politique de confidentialité</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <p>123 Abomey-Calavi<br>Aitchedji, Bénin</p>
+                    <p>Email: <a href="mailto: contact.betadeep@gmail.com" class="__cf_email__" data-cfemail="95f6fafbe1f4f6e1d5e1f0f6fde0e5f4f3e7fcf6f4bbf6faf8">contact.betadeep@gmail.com</a><br><a style="color: white;text-decoration:none" href="tel: 22944974733">Tél: +229 44974733</a></p>
+                    <div class="social-links">
+                        <a href="https://wwww.facebook.com/profile.php?id=61572897093183" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 βetadeep. Tous droits réservés.</p>
+                <p>&copy; 2025 BetaDEEP. Tous droits réservés.</p>
             </div>
         </div>
     </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
-
